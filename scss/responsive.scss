@@ -17,6 +17,7 @@
         #imagem__qr{
             @include forTablet-only{
                 width: 80%;
+                max-width: 480px;
                 height:80%;
             }
 
