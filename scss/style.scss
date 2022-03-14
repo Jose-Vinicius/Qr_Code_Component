@@ -1,1 +1,36 @@
-@import 'colors';
+//colors
+$White: hsl(0, 0%, 100%);
+$Light: hsl(212, 45%, 89%);
+$Grayish: hsl(220, 15%, 55%);
+$Dark: hsl(218, 44%, 22%);
+
+//responsive
+@mixin forTablet-only {
+    @media (min-width: 768px) and (max-width:1199.98px){
+        @content; 
+    }
+}
+
+@mixin forDesktop-only{
+    @media (max-width: 1199.98px) {
+        @content;
+    }
+}
+
+@mixin text-parameters($family,$weight,$size,$color){
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+
+
+html{
+    Font-size: 15px;
+    background-color: $Light;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+@import 'qrcode', 'responsive';

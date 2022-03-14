@@ -1,0 +1,48 @@
+.container{
+
+    @include forTablet-only{
+        width: 30%;
+        margin: 8% auto;
+        padding: 2%;
+    }
+    
+    @include forDesktop-only{
+        width: 200px;
+        height: 360px;
+        margin: 4% auto;
+    }
+
+
+    &__img{
+        #imagem__qr{
+            @include forTablet-only{
+                width: 80%;
+                height:80%;
+            }
+
+            @include forDesktop-only{
+                width: 100%;
+                height: 80%
+            }
+        }
+    }
+}
+
+.content{
+    &__title{
+        @include forTablet-only{
+            @include text-parameters('Outfit', 700, 1.5rem, $Dark);
+        }
+        @include forDesktop-only{
+            @include text-parameters('Outfit', 700, 1.2rem, $Dark);
+        }
+    }
+    &__description{
+        @include forTablet-only{
+            @include text-parameters('outfit', 400, 1.3rem, $Grayish)
+        }
+        @include forTablet-only{
+            @include text-parameters('outfit', 400, .9rem, $Grayish)
+        }
+    }
+}

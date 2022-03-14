@@ -1,0 +1,42 @@
+.container{
+    width: 80%;
+    text-align: center;
+    margin: 20% auto;
+    padding: 4%;
+    background-color: $White;
+    border-radius: 20px;
+
+    @include forTablet-only{
+        width: 60%;
+        margin: 8% auto;
+        padding: 2%;
+    }
+
+
+    &__img{
+        #imagem__qr{
+            width: 100%;
+            border-radius: 20px;
+
+            @include forTablet-only{
+                width: 80%;
+                height:80%;
+            }
+        }
+    }
+}
+
+.content{
+    &__title{
+        @include text-parameters('Outfit', 700, 1.3rem, $Dark);
+        @include forTablet-only{
+            @include text-parameters('Outfit', 700, 1.5rem, $Dark);
+        }
+    }
+    &__description{
+        @include text-parameters('Outfit', 400, .9rem, $Grayish);
+        @include forTablet-only{
+            @include text-parameters('outfit', 400, 1.3rem, $Grayish)
+        }
+    }
+}
