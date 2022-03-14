@@ -6,22 +6,11 @@
     background-color: $White;
     border-radius: 20px;
 
-    @include forTablet-only{
-        width: 60%;
-        margin: 8% auto;
-        padding: 2%;
-    }
-
 
     &__img{
         #imagem__qr{
             width: 100%;
             border-radius: 20px;
-
-            @include forTablet-only{
-                width: 80%;
-                height:80%;
-            }
         }
     }
 }
