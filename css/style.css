@@ -53,7 +53,7 @@ html {
     padding: 2%;
   }
 }
-@media (min-width: 1199.98px) and (max-width: 1439.98px) {
+@media (min-width: 1199.98px) and (max-width: 1439.97px) {
   .container {
     width: 200px;
     height: 360px;
@@ -65,18 +65,6 @@ html {
     width: 20%;
     margin: 5% auto;
   }
-  .container__title {
-    font-family: "Outfit";
-    font-weight: 700;
-    font-size: 1.7rem;
-    color: #1f3251;
-  }
-  .container__description {
-    font-family: "Outfit";
-    font-weight: 400;
-    font-size: 1.2rem;
-    color: #7b879d;
-  }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .container__img #imagem__qr {
@@ -84,9 +72,8 @@ html {
     height: 80%;
   }
 }
-@media (min-width: 1199.98px) and (max-width: 1439.98px) {
+@media (min-width: 1199.98px) and (max-width: 1439.97px) {
   .container__img #imagem__qr {
-    max-width: 200px;
     width: 50%;
     height: 80%;
   }
@@ -106,7 +93,7 @@ html {
     color: #1f3251;
   }
 }
-@media (min-width: 1199.98px) and (max-width: 1439.98px) {
+@media (min-width: 1199.98px) and (max-width: 1439.97px) {
   .content__title {
     font-family: "Outfit";
     font-weight: 700;

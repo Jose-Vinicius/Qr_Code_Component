@@ -15,13 +15,6 @@
     @include forLargeDesktop-only{
         width: 20%;
         margin: 5% auto;
-        
-        &__title{
-            @include text-parameters('Outfit', 700, 1.7rem, $Dark);
-        }
-        &__description{
-            @include text-parameters('Outfit', 400, 1.2rem, $Grayish);
-        }
     }
 
 
@@ -33,7 +26,6 @@
             }
 
             @include forDesktop-only{
-                max-width: 200px;
                 width: 50%;
                 height: 80%
             }

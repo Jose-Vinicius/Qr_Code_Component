@@ -12,7 +12,7 @@ $Dark: hsl(218, 44%, 22%);
 }
 
 @mixin forDesktop-only{
-    @media (min-width: 1199.98px) and (max-width:1439.98px){
+    @media (min-width: 1199.98px) and (max-width:1439.97px){
         @content;
     }
 }
