@@ -2,7 +2,7 @@
 
     @include forTablet-only{
         width: 30%;
-        margin: 8% auto;
+        margin: 6% auto;
         padding: 2%;
     }
     
@@ -12,17 +12,33 @@
         margin: 3% auto;
     }
 
+    @include forLargeDesktop-only{
+        width: 20%;
+        margin: 5% auto;
+        
+        &__title{
+            @include text-parameters('Outfit', 700, 1.7rem, $Dark);
+        }
+        &__description{
+            @include text-parameters('Outfit', 400, 1.2rem, $Grayish);
+        }
+    }
+
 
     &__img{
         #imagem__qr{
             @include forTablet-only{
                 width: 80%;
-                max-width: 480px;
                 height:80%;
             }
 
             @include forDesktop-only{
                 max-width: 200px;
+                width: 50%;
+                height: 80%
+            }
+
+            @include forLargeDesktop-only{
                 width: 100%;
                 height: 80%
             }
